@@ -1,0 +1,71 @@
+/* Style for the search input */
+#searchInput {
+    padding: 8px;
+    width: 300px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+}
+
+/* Style for the radio buttons */
+div {
+    margin-bottom: 10px;
+}
+
+label {
+    margin-right: 15px;
+    font-size: 16px;
+}
+
+/* General table styling (previously shared) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+}
+
+thead th {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    text-align: left;
+    border-bottom: 2px solid #ddd;
+}
+
+tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    overflow-x: auto;
+}
+
+body {
+    padding: 20px;
+}
+
+td, th {
+    font-size: 16px;
+}
+
+table {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}

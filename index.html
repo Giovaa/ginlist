@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GINLIST</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1> GIN LIST</h1>
+    <!-- Search box for filtering by name -->
+    <input type="text" id="searchInput" placeholder="Search by name..." onkeyup="filterTable()">
+
+    <!-- Radio buttons for filtering by category -->
+    <div>
+        <label><input type="radio" name="category" value="" checked onclick="filterTable()"> All</label>
+        <label><input type="radio" name="category" value="Secchi" onclick="filterTable()"> Secchi</label>
+        <label><input type="radio" name="category" value="Morbidi" onclick="filterTable()"> Morbidi</label>
+        <label><input type="radio" name="category" value="Dolci" onclick="filterTable()"> Dolci</label>
+        <label><input type="radio" name="category" value="Riserva" onclick="filterTable()"> Dolci</label>
+    </div>
+    <table id="ginTable">
+        <thead></thead>
+        <tbody></tbody>
+    </table>
+
+
+
+    <script src="table.js"></script>
+</body>
+</html>
