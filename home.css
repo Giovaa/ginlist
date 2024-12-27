@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e8f0f7; /* Soft light blue for a calming background */
+}
+.container {
+    background: linear-gradient(to bottom right, #1d3557, #457b9d); /* Modern blue gradient */
+    border-radius: 15px;
+    padding: 40px;
+    width: 500px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), 0 6px 25px rgba(0, 0, 0, 0.1); /* Container shadow */
+    text-align: center;
+}
+.title {
+    margin-bottom: 30px;
+}
+h1 {
+    font-size: 2.5rem; /* Bigger title size */
+    font-weight: bold;
+    color: #f1faee; /* Soft white for the title */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.button-row {
+    display: flex;
+    justify-content: space-between;
+}
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    background: linear-gradient(to bottom right, #457b9d, #1d3557); /* Matching gradient for buttons */
+    color: #f1faee; /* Light text for better contrast */
+    border: 2px solid #f1faee; /* Light border */
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s, box-shadow 0.3s, border-color 0.3s;
+    width: 250px;
+}
+button:hover {
+    border-color: #e63946; /* Modern red for hover effect */
+    background: linear-gradient(to bottom right, #e63946, #d90429); /* Gradient red hover */
+    transform: translateY(-2px) scale(1.05); /* Slightly larger on hover */
+    box-shadow: 0 4px 8px rgba(230, 57, 70, 0.8); /* Red shadow on hover */
+}
+

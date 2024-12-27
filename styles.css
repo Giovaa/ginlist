@@ -1,10 +1,40 @@
+/* Body padding and margins */
+body {
+    color: #f1faee; /* Modern dark blue for text */
+    padding: 20px;
+    margin: 0;
+    display: flex; /* Enable flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    background-color: #e8f0f7; /* Light blue background */
+}
+
+/* Wrapper to occupy 50% of the page */
+.wrapper {
+    width: 50%; /* Half the page width for a balanced look */
+    margin: auto; /* Center the wrapper */
+}
+
+/* Container styles */
+.container {
+    background: linear-gradient(to bottom right, #1d3557, #457b9d); /* Modern blue gradient */
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), 0 6px 25px rgba(0, 0, 0, 0.1); /* Container shadow */
+    text-align: center;
+}
+
 /* Style for the search input */
 #searchInput {
     padding: 8px;
-    width: 300px;
+    width: 100%; /* Full width within the container */
     margin-bottom: 10px;
     font-size: 16px;
-    border: 1px solid #ddd;
+    border: 2px solid #f1faee; /* Soft white border */
+    border-radius: 5px; /* Rounded corners */
+    background: linear-gradient(to bottom right, #457b9d, #1d3557); /* Blue gradient for input */
+    color: #f1faee; /* Light text for contrast */
 }
 
 /* Style for the radio buttons */
@@ -15,20 +45,23 @@ div {
 label {
     margin-right: 15px;
     font-size: 16px;
+    color: #f1faee; /* Light text color for labels */
 }
 
-/* General table styling (previously shared) */
+/* General table styling */
 table {
-    width: 100%;
+    color: #f1faee; /* Modern dark blue text */
+    width: 100%; /* Full width within the container */
     border-collapse: collapse;
     font-family: Arial, sans-serif;
-    margin: 20px 0;
-    border: 1px solid #ddd;
+    margin: 20px 0; /* Spacing above and below the table */
+    border: 1px solid #ddd; /* Border for the table */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Table shadow */
 }
 
 thead th {
-    background-color: #4CAF50;
-    color: white;
+    background: linear-gradient(to bottom right, #1d3557, #457b9d); /* Header gradient */
+    color: #f1faee; /* Light text color for headers */
     padding: 12px;
     text-align: left;
     border-bottom: 2px solid #ddd;
@@ -39,33 +72,24 @@ tbody tr {
 }
 
 tbody tr:nth-child(even) {
-    background-color: #f9f9f9;
+    background-color: rgba(69, 123, 157, 0.1); /* Light blue for even rows */
 }
 
 tbody tr:hover {
-    background-color: #f1f1f1;
+    background: linear-gradient(to right, #a8dadc, #f1faee); /* Soft teal to white gradient on hover */
+    color: #1d3557; /* Dark blue text on hover */
 }
 
 td {
     padding: 12px;
     text-align: left;
     border-bottom: 1px solid #ddd;
+    font-size: 16px; /* Font size for table data */
 }
 
-table {
-    border-collapse: collapse;
-    width: 100%;
-    overflow-x: auto;
+option {
+    color: #000000
 }
-
-body {
-    padding: 20px;
-}
-
-td, th {
-    font-size: 16px;
-}
-
-table {
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+#datatables_buttons_info {
+    color:#000000
 }
