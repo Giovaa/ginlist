@@ -1,4 +1,11 @@
-/* Body padding and margins */
+/* General Reset */
+* {
+    margin: 0;
+    padding: 20;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
 body {
     color: #f1faee; /* Modern dark blue for text */
     padding: 20px;
@@ -8,52 +15,53 @@ body {
     align-items: center; /* Center vertically */
     height: 100vh; /* Full viewport height */
     background-color: #e8f0f7; /* Light blue background */
+    font-family: Arial, sans-serif;
 }
 
-/* Wrapper to occupy 50% of the page */
+/* Wrapper Styles */
 .wrapper {
-    width: 50%; /* Half the page width for a balanced look */
+    width: 90%; /* Default width */
+    max-width: 700px; /* Limit maximum width */
     margin: auto; /* Center the wrapper */
 }
 
-/* Container styles */
+/* Container Styles */
 .container {
     background: linear-gradient(to bottom right, #1d3557, #457b9d); /* Modern blue gradient */
     border-radius: 15px;
-    padding: 40px;
+    padding: 20px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), 0 6px 25px rgba(0, 0, 0, 0.1); /* Container shadow */
     text-align: center;
 }
 
-/* Style for the search input */
+/* Search Input Styles */
 #searchInput {
     padding: 8px;
     width: 100%; /* Full width within the container */
-    margin-bottom: 10px;
-    font-size: 16px;
+    margin-bottom: 15px;
+    font-size: 1rem;
     border: 2px solid #f1faee; /* Soft white border */
     border-radius: 5px; /* Rounded corners */
     background: linear-gradient(to bottom right, #457b9d, #1d3557); /* Blue gradient for input */
     color: #f1faee; /* Light text for contrast */
 }
 
-/* Style for the radio buttons */
+/* Radio Buttons and Labels */
 div {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 label {
     margin-right: 15px;
-    font-size: 16px;
+    font-size: 1rem;
     color: #f1faee; /* Light text color for labels */
 }
 
-/* General table styling */
+/* Table Styles */
 table {
     color: #f1faee; /* Modern dark blue text */
     width: 100%; /* Full width within the container */
     border-collapse: collapse;
-    font-family: Arial, sans-serif;
     margin: 20px 0; /* Spacing above and below the table */
     border: 1px solid #ddd; /* Border for the table */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Table shadow */
@@ -84,12 +92,56 @@ td {
     padding: 12px;
     text-align: left;
     border-bottom: 1px solid #ddd;
-    font-size: 16px; /* Font size for table data */
+    font-size: 1rem;
 }
 
-option {
-    color: #000000
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .wrapper {
+        width: 95%; /* Increase width for smaller screens */
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    th, td {
+        font-size: 0.9rem; /* Adjust font size */
+        padding: 8px;
+    }
+
+    #searchInput {
+        font-size: 0.9rem;
+    }
 }
-#datatables_buttons_info {
-    color:#000000
+
+@media (max-width: 480px) {
+    body {
+        height: auto;
+        align-items: flex-start; /* Adjust alignment */
+        padding: 10px;
+    }
+
+    .wrapper {
+        width: 100%; /* Full width for smallest screens */
+    }
+
+    th, td {
+        font-size: 0.8rem; /* Further adjust font size */
+        padding: 6px;
+    }
+
+    #searchInput {
+        font-size: 0.8rem;
+        padding: 6px;
+    }
+}
+
+/* Datatables Overrides */
+option, #datatables_buttons_info {
+    color: #000000;
 }
